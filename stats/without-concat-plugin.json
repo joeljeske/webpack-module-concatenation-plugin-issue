@@ -1,0 +1,554 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.19.1",
+  "hash": "6493f318a8de13f1edcf",
+  "time": 245,
+  "builtAt": 1537471669365,
+  "publicPath": "",
+  "outputPath": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/dist",
+  "assetsByChunkName": {
+    "main": "main.js"
+  },
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 2051,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "1.js",
+      "size": 174,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "2.js",
+      "size": 112,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 24,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "hash": "af43a86994670205e316",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        1
+      ],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+          "name": "./src/entry.js",
+          "index": 0,
+          "index2": 0,
+          "size": 24,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/entry.js",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "import('./first-async');"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src/entry.js",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 100,
+      "names": [],
+      "files": [
+        "1.js"
+      ],
+      "hash": "6c8aeacd172ae95d84db",
+      "siblings": [],
+      "parents": [
+        0
+      ],
+      "children": [
+        2
+      ],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 1,
+          "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+          "name": "./src/first-async.js",
+          "index": 1,
+          "index2": 2,
+          "size": 82,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+          "issuerId": 0,
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "import()",
+              "userRequest": "./first-async",
+              "loc": "1:0-23"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "import './first-async-dependency';\n\nimport('./second-async');\n\nexport default {};\n"
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async-dependency.js",
+          "name": "./src/first-async-dependency.js",
+          "index": 2,
+          "index2": 1,
+          "size": 18,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+          "issuerId": 1,
+          "issuerName": "./src/first-async.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+              "name": "./src/entry.js"
+            },
+            {
+              "id": 1,
+              "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+              "name": "./src/first-async.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+              "module": "./src/first-async.js",
+              "moduleName": "./src/first-async.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./first-async-dependency",
+              "loc": "1:0-34"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "export default {};"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+          "moduleIdentifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+          "moduleName": "./src/entry.js",
+          "loc": "1:0-23",
+          "request": "./first-async",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 18,
+      "names": [],
+      "files": [
+        "2.js"
+      ],
+      "hash": "1ae1885368ba3479def2",
+      "siblings": [],
+      "parents": [
+        1
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 3,
+          "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/second-async.js",
+          "name": "./src/second-async.js",
+          "index": 3,
+          "index2": 3,
+          "size": 18,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            2
+          ],
+          "issuer": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+          "issuerId": 1,
+          "issuerName": "./src/first-async.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+              "name": "./src/entry.js"
+            },
+            {
+              "id": 1,
+              "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+              "name": "./src/first-async.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+              "module": "./src/first-async.js",
+              "moduleName": "./src/first-async.js",
+              "type": "import()",
+              "userRequest": "./second-async",
+              "loc": "3:0-24"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "export default {};"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 1,
+          "module": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+          "moduleIdentifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+          "moduleName": "./src/first-async.js",
+          "loc": "3:0-24",
+          "request": "./second-async",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+      "name": "./src/entry.js",
+      "index": 0,
+      "index2": 0,
+      "size": 24,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/entry.js",
+          "loc": "main"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "import('./first-async');"
+    },
+    {
+      "id": 1,
+      "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+      "name": "./src/first-async.js",
+      "index": 1,
+      "index2": 2,
+      "size": 82,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+      "issuerId": 0,
+      "issuerName": "./src/entry.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+          "name": "./src/entry.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "import()",
+          "userRequest": "./first-async",
+          "loc": "1:0-23"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "import './first-async-dependency';\n\nimport('./second-async');\n\nexport default {};\n"
+    },
+    {
+      "id": 2,
+      "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async-dependency.js",
+      "name": "./src/first-async-dependency.js",
+      "index": 2,
+      "index2": 1,
+      "size": 18,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+      "issuerId": 1,
+      "issuerName": "./src/first-async.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+          "name": "./src/entry.js"
+        },
+        {
+          "id": 1,
+          "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+          "name": "./src/first-async.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+          "module": "./src/first-async.js",
+          "moduleName": "./src/first-async.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./first-async-dependency",
+          "loc": "1:0-34"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 2,
+      "source": "export default {};"
+    },
+    {
+      "id": 3,
+      "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/second-async.js",
+      "name": "./src/second-async.js",
+      "index": 3,
+      "index2": 3,
+      "size": 18,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+      "issuerId": 1,
+      "issuerName": "./src/first-async.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/entry.js",
+          "name": "./src/entry.js"
+        },
+        {
+          "id": 1,
+          "identifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+          "name": "./src/first-async.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/Users/jjeske/Projects/webpack-module-concatenation-plugin-issue/src/first-async.js",
+          "module": "./src/first-async.js",
+          "moduleName": "./src/first-async.js",
+          "type": "import()",
+          "userRequest": "./second-async",
+          "loc": "3:0-24"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 2,
+      "source": "export default {};"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}
